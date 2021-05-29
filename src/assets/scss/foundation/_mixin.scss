@@ -1,0 +1,34 @@
+@mixin pc($width: 769px) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin sp($width: 768px) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+// font-size
+@mixin fz($font_pc: "", $font_sp: ""){
+  font-size: #{$font_pc}px;
+  font-size: #{$font_pc / 100}rem;
+
+  @if ($font_sp != "") {
+    @include sp {
+      font-size: #{$font_sp}px;
+      font-size: #{$font_sp / 100}rem;
+    }
+  }
+}
+
+@mixin lh($lineH_pc: "", $lineH_sp: ""){
+	line-height: #{$lineH_pc}em;
+	@if ($lineH_sp != "") {
+		@include sp {
+			line-height: #{$lineH_sp}em;
+		}
+	}
+}
+
