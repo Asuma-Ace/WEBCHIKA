@@ -1,0 +1,28 @@
+.c-title {
+    @include fz(46, 36);
+    @include lh(1);
+    font-family: $font_futura;
+    letter-spacing: 0.032em;
+    @include sp {
+        text-align: center;
+    }
+    & + * {
+        margin-top: 50px;
+        @include sp {
+            margin-top: 40px;
+        }
+    }
+    & + .c-textArea {
+        margin-top: 40px;
+        @include sp {
+            margin-top: 30px;
+        }
+    }
+}
+
+.c-title--center {
+    @extend .c-title;
+    @include pc {
+        text-align: center;
+    }
+}

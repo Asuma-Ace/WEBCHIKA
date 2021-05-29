@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
-// black
-$black: #000;
-
-// white
-$white: #fff;
-
-// gray
+$black: #181818;
+$white: #ffffff;
 $gray: #333;
+$yellow: #f5e33c;
+
+$font_noto: noto-sans-cjk-jp, 'Noto Sans', 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+$font_futura: futura-pt-bold, noto-sans-cjk-jp, 'Noto Sans', 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;

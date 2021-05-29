@@ -1,0 +1,8 @@
+.l-section {
+  position: relative;
+  padding: 90px 0;
+  width: 100%;
+  @include sp {
+    padding: 60px 0;
+  }
+}

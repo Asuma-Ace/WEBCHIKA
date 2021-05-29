@@ -1,0 +1,56 @@
+.c-textArea {
+    margin-top: 30px;
+    &_img {
+        & + * {
+            margin-top: 30px;
+            @include sp {
+                margin-top: 20px;
+            }
+        }
+    }
+    &_title {
+        @include lh(1.7);
+        font-weight: bold;
+        &--big {
+            @include fz(40, 26);
+            font-family: $font_futura;
+            & + .c-textArea_text {
+                margin-top: 20px;
+            }
+        }
+        &--underscore {
+            display: inline-block;
+            @include fz(20, 18);
+            @include lh(2);
+            font-weight: bold;
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: $black;
+            }
+
+            & + .c-textArea_text {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    &_text {
+        @include lh(1.7, 2);
+        &--big {
+            @include fz(18, 16);
+            @include lh(2.5);
+            font-weight: bold;
+            @include sp {
+                text-align: center;
+            }
+        }
+    }
+
+    &--center {
+        @extend .c-textArea;
+        text-align: center;
+    }
+}
