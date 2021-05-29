@@ -1,0 +1,74 @@
+.l-footer {
+    padding: 90px 0 30px;
+    background: $yellow;
+    @include sp {
+        padding-top: 60px;
+    }
+    &_contact {
+        padding: 50px 0;
+        background: $white;
+    }
+
+    &_logo {
+        width: 138px;
+        margin: 90px auto 0;
+        @include sp {
+            margin-top: 60px;
+        }
+    }
+
+    &_sns {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        li {
+            width: 60px;
+            height: 60px;
+            & + li {
+                margin-left: 28px;
+            }
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                background: $white;
+                img {
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+    &_nav {
+        margin-top: 40px;
+        &_inner {
+            display: flex;
+            justify-content: center;
+            li {
+                & + li {
+                    margin-left: 38px;
+                }
+                a {
+                    @include fz(20);
+                    font-family: $font_futura;
+                }
+            }
+        }
+    }
+
+    &_copy {
+        margin-top: 40px;
+        @include fz(14);
+        font-weight: bold;
+        text-align: right;
+        color: $white;
+        @include sp {
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+}
