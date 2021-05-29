@@ -1,0 +1,2 @@
+!function(){"use strict";var e;e=document.querySelector(".j-header"),document.querySelector(".j-header_btn").addEventListener("click",(function(){e.classList.contains("active")?e.classList.remove("active"):e.classList.add("active")}))}();
+//# sourceMappingURL=script.js.map

@@ -1,0 +1,163 @@
+.l-header {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 80px;
+    background: $white;
+    @include sp {
+        padding: 0 20px;
+        height: 60px;
+    }
+}
+
+.l-header_logo {
+    width: 160px;
+    @include sp {
+        width: 38px;
+    }
+    a {
+        display: block;
+        width: 100%;
+    }
+}
+
+.l-header_pageTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include fz(24, 18);
+    color: $black;
+    font-family: $font_futura;
+}
+
+.l-header_btn {
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    &_hamburger {
+        position: relative;
+        width: 40px;
+        height: 18px;
+        @include sp {
+            width: 30px;
+            height: 14px;
+        }
+
+        span {
+            position: absolute;
+            right: 0;
+
+            transition: 0.2s;
+            transform: translateY(0) rotate(0);
+
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: $black;
+        }
+        span:nth-of-type(1) {
+            width: 100%;
+            top: 0;
+        }
+        span:nth-of-type(2) {
+            width: calc(28 / 40 * 100%);
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        span:nth-of-type(3) {
+            width: calc(14 / 40 * 100%);
+            bottom: 0;
+        }
+    }
+
+    &_text {
+        margin-left: 12px;
+        height: 1em;
+        @include fz(22);
+        @include lh(1);
+        font-family: $font_futura;
+        color: $black;
+        overflow: hidden;
+        &_inner {
+            position: relative;
+            top: 0;
+            transition: 0.2s;
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+.l-header_nav {
+    width: 100%;
+    height: 100vh;
+    background: $black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+    &_inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &_cmn {
+        text-align: center;
+        & + .l-header_nav_cmn {
+            margin-top: 4vw;
+            @include sp {
+                margin-top: 5vw;
+            }
+        }
+        a {
+            color: $white;
+            @include fz(40);
+            font-family: $font_futura;
+        }
+    }
+}
+
+.l-header.active {
+    .l-header_btn_hamburger {
+        span {
+            background: $white;
+        }
+        span:nth-of-type(1) {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        span:nth-of-type(2) {
+            width: 0;
+        }
+        span:nth-of-type(3) {
+            width: 100%;
+            bottom: 50%;
+            transform: translateY(50%) rotate(-45deg);
+        }
+    }
+    .l-header_btn_text {
+        color: $white;
+        &_inner {
+            top: -1em;
+        }
+    }
+    .l-header_nav {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
