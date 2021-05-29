@@ -16,8 +16,16 @@ html {
 }
 
 body {
-  font-size: 10px;
+  @include fz(16, 14);
+  font-family: $font_noto;
   color: $black;
+}
+
+main {
+  padding-top: 80px;
+  @include sp {
+    padding-top: 60px;
+  }
 }
 
 a {
