@@ -14,7 +14,11 @@
     <meta property="og:site_name" content="WEBCHIKA" />
     <link rel="stylesheet" href="https://use.typekit.net/wqr3nol.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/script.js" defer></script>
 </head>
 
@@ -49,22 +53,22 @@
 
 
   <nav class="l-header_nav">
-    <ul class="l-header_nav_inner">
-      <li class="l-header_nav_cmn"><a class="j-header_link" href="#">TOP</a></li>
-      <li class="l-header_nav_cmn"><a class="j-header_link" href="#">ABOUT</a></li>
-      <li class="l-header_nav_cmn"><a class="j-header_link" href="#">SERVISE</a></li>
-      <li class="l-header_nav_cmn"><a class="j-header_link" href="#">WORKS</a></li>
-      <li class="l-header_nav_cmn"><a class="j-header_link" href="#">NEWS</a></li>
-      <li class="l-header_nav_cmn"><a class="j-header_link" href="#">CONTACT</a></li>
+    <ul class="l-header_nav_inner" id="page-link">
+      <li class="l-header_nav_cmn"><a class="j-header_link" href="#top">TOP</a></li>
+      <li class="l-header_nav_cmn"><a class="j-header_link" href="#about">ABOUT</a></li>
+      <li class="l-header_nav_cmn"><a class="j-header_link" href="#service">SERVICE</a></li>
+      <li class="l-header_nav_cmn"><a class="j-header_link" href="#works">WORKS</a></li>
+      <li class="l-header_nav_cmn"><a class="j-header_link" href="#news">NEWS</a></li>
+      <li class="l-header_nav_cmn"><a class="j-header_link" href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 </header>
 
 				<main>
-					<section class="l-mv">
+					<section class="l-mv wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120" id="top">
 						<div class="l-mv_inner">
-							<h1>MOVE HEART.</h1>
-							<p>
+							<h1 class=" wow animate__animated animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s" data-wow-offset="120">MOVE HEART.</h1>
+							<p class=" wow animate__animated animate__fadeIn" data-wow-delay="1.4s" data-wow-duration="1.5s" data-wow-offset="120">
 								We don’t just make videos.<br>
 								What we make is a videos, <br class="sp">a videos that changes the “Future”.
 							</p>
@@ -76,41 +80,172 @@
 						</ul>
 					</section>
 
-					<section class="p-top_about l-section">
+					<section class="p-top_about l-section wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120" id="about">
 						<div class="l-container">
 							<div class="p-top_about_cont">
 								<div class="p-top_about_cont_text">
-									<h2 class="c-title">ABOUT</h2>
+									<h2 class="c-title  wow animate__animated animate__fadeIn" data-wow-delay="0.8s" data-wow-duration="1.5s" data-wow-offset="120">ABOUT</h2>
 									<div class="c-textArea">
-										<p class="c-textArea_text--big">
+										<p class="c-textArea_text--big  wow animate__animated animate__fadeIn" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="120">
 											心が動けば、その瞬間から未来が変わる。<br>
 											私たちはただの映像なんか作らない。<br>
 											作るのは心を動かす映像、<br class="sp">「未来」を変える映像だ。
 										</p>
-										<a class="c-button" href="">MORE...</a>
+										<a class="c-button wow animate__animated animate__fadeIn" data-wow-delay="1.2s" data-wow-duration="1.5s" data-wow-offset="120" href="">MORE...</a>
 									</div>
 								</div>
 
-								<div class="p-top_about_cont_img">
+								<div class="p-top_about_cont_img  wow animate__animated animate__fadeIn" data-wow-delay="1.6s" data-wow-duration="1.5s" data-wow-offset="120">
 									<img src="./assets/img/about_img.jpg" alt="ABOUT image" width="630" height="711.53">
 								</div>
 							</div>
 						</div>
 					</section>
 
+					<section class="p-top_service l-section wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120" id="service">
+						<div class="l-container--big">
+							<h2 class="c-title--center">SERVICE</h2>
+							<ul class="p-top_service_cont">
+								<li class="c-textArea p-top_service_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120">
+									<img class="c-textArea_img" src="./assets/img/service_img_video.jpg" alt="映像制作 イメージ" width="380"
+										height="290">
+									<h3 class="c-textArea_title--underscore">映像制作</h3>
+									<p class="c-textArea_text">CM、MV、WEB、SNS、イベントなど様々な分野の映像を手がけています。</p>
+									<a class="c-button--line" href="">MORE</a>
+								</li>
+								<li class="c-textArea p-top_service_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="120">
+									<img class="c-textArea_img" src="./assets/img/service_img_animation.jpg" alt="アニメーション制作 イメージ"
+										width="380" height="290">
+									<h3 class="c-textArea_title--underscore">アニメーション制作</h3>
+									<p class="c-textArea_text">実写映像を使っては表現仕切れない、抽象的な概念を映像化します。</p>
+									<a class="c-button--line" href="">MORE</a>
+								</li>
+								<li class="c-textArea p-top_service_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.8s" data-wow-duration="1.5s" data-wow-offset="120">
+									<img class="c-textArea_img" src="./assets/img/service_img_live.jpg" alt="セミナーなどの配信企画 イメージ" width="380"
+										height="290">
+									<h3 class="c-textArea_title--underscore">セミナーなどの配信企画</h3>
+									<p class="c-textArea_text">セミナーなど深みのある情報を配信することによって、参加者集めや広告を効率的に。</p>
+									<a class="c-button--line" href="">MORE</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="p-top_works l-section wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120" id="works">
+						<div class="l-container">
+							<h2 class="c-title">WORKS</h2>
+
+							<ul class="p-top_works_cont">
+								<li class="p-top_works_cont_main wow animate__animated animate__fadeIn" data-wow-delay="0.4s" data-wow-duration="1.5s" data-wow-offset="120">
+									<div class="p-top_works_cont_cmn">
+										<img class="p-top_works_cont_cmn_img" src="./assets/img/works_img_01.jpg"
+											alt="Sheep literature 「1999」イメージ" height="680" height="382.84">
+										<ul class="p-top_works_cont_cmn_tag">
+											<li><a href="">CM</a></li>
+											<li><a href="">MV</a></li>
+										</ul>
+										<div class="c-textArea">
+											<p class="c-textArea_title--big">Sheep literature 「1999」</p>
+											<p class="c-textArea_text">2020年12月にリリースされたSheep literatureの1stシングルの収録曲「1999」のMusicVideoを担当しました。
+											</p>
+											<a class="c-button--line--white" href="">MORE</a>
+										</div>
+									</div>
+								</li>
+
+								<li class="p-top_works_cont_side">
+									<ul class="p-top_works_cont_side_inner">
+										<li class="p-top_works_cont_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s" data-wow-offset="120">
+											<img class="p-top_works_cont_cmn_img" src="./assets/img/works_img_02.jpg"
+												alt="旅行会社プロモーション「TEST」イメージ" width="180" height="101.34">
+											<div class="c-textArea">
+												<p class="c-textArea_title">旅行会社プロモーション「TEST」</p>
+												<a class="c-button--linemini--white" href="">MORE</a>
+											</div>
+										</li>
+										<li class="p-top_works_cont_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.8s" data-wow-duration="1.5s" data-wow-offset="120">
+											<img class="p-top_works_cont_cmn_img" src="./assets/img/works_img_03.jpg"
+												alt="旅行会社プロモーション「TEST」イメージ" width="180" height="101.34">
+											<div class="c-textArea">
+												<p class="c-textArea_title">旅行会社プロモーション「TEST」</p>
+												<a class="c-button--linemini--white" href="">MORE</a>
+											</div>
+										</li>
+										<li class="p-top_works_cont_cmn wow animate__animated animate__fadeIn" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="120">
+											<img class="p-top_works_cont_cmn_img" src="./assets/img/works_img_04.jpg"
+												alt="旅行会社プロモーション「TEST」イメージ" width="180" height="101.34">
+											<div class="c-textArea">
+												<p class="c-textArea_title">旅行会社プロモーション「TEST」</p>
+												<a class="c-button--linemini--white" href="">MORE</a>
+											</div>
+										</li>
+										<li class="p-top_works_cont_cmn wow animate__animated animate__fadeIn" data-wow-delay="1.2s" data-wow-duration="1.5s" data-wow-offset="120">
+											<img class="p-top_works_cont_cmn_img" src="./assets/img/works_img_05.jpg"
+												alt="旅行会社プロモーション「TEST」イメージ" width="180" height="101.34">
+											<div class="c-textArea">
+												<p class="c-textArea_title">旅行会社プロモーション「TEST」</p>
+												<a class="c-button--linemini--white" href="">MORE</a>
+											</div>
+										</li>
+									</ul>
+
+									<a class="c-button--center wow animate__animated animate__fadeIn" data-wow-delay="1.4s" data-wow-duration="1.5s" data-wow-offset="120" href="">MORE...</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="p-top_news l-section wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120" id="news">
+						<div class="l-container--big">
+							<h2 class="c-title--center">NEWS</h2>
+
+							<ul class="p-top_news_list">
+								<li class="p-top_news_list_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="120">
+									<a href="">
+										<div class="p-top_news_list_cmn_img" style="background-image: url(./assets/img/news_img_01.jpg);">
+										</div>
+
+										<dl>
+											<dd>2021.01.01</dd>
+											<dt>
+												<p>ホームページをリニューアルしました。</p>
+												<span class="c-button--linemini">MORE</span>
+											</dt>
+										</dl>
+									</a>
+								</li>
+								<li class="p-top_news_list_cmn wow animate__animated animate__fadeIn" data-wow-delay="0.8s" data-wow-duration="1.5s" data-wow-offset="120">
+									<a href="">
+										<div class="p-top_news_list_cmn_img" style="background-image: url(./assets/img/news_img_02.jpg);">
+										</div>
+
+										<dl>
+											<dd>2021.01.01</dd>
+											<dt>
+												<p>ホームページをリニューアルしました。</p>
+												<span class="c-button--linemini">MORE</span>
+											</dt>
+										</dl>
+									</a>
+								</li>
+							</ul>
+
+							<a class="c-button--center wow animate__animated animate__fadeIn" data-wow-delay="1.1s" data-wow-duration="1.5s" data-wow-offset="120" href="">MORE...</a>
+						</div>
+					</section>
 				</main>
 
-				<footer class="l-footer">
+				<footer class="l-footer wow animate__animated animate__fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="120" id="contact">
   <div class="l-container">
     <div class="l-footer_contact">
-      <h2 class="c-title--center">CONTACT</h2>
+      <h2 class="c-title--center wow animate__animated animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s" data-wow-offset="120">CONTACT</h2>
       <div class="c-textArea--center">
-        <p class="c-textArea_text--big">
+        <p class="c-textArea_text--big wow animate__animated animate__fadeIn" data-wow-delay="0.9s" data-wow-duration="1.5s" data-wow-offset="120">
           自分の想いを誰かに伝えたい。<br>
           そんなあなたのために<br class="sp">私たちは存在しています。<br>
           お気軽にご連絡ください。
         </p>
-        <a class="c-button--center" href="">CONTACT</a>
+        <a class="c-button--center wow animate__animated animate__fadeIn" data-wow-delay="1.2s" data-wow-duration="1.5s" data-wow-offset="120" href="">CONTACT</a>
       </div>
     </div>
 

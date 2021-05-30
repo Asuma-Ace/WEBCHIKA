@@ -47,3 +47,185 @@
         }
     }
 }
+
+.p-top_service {
+    &_cont {
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_cmn {
+        @include pc {
+            max-width: 380px;
+            width: 30%;
+            margin-top: 0;
+            &:nth-of-type(2) {
+                margin-top: 50px;
+            }
+            &:nth-of-type(3) {
+                margin-top: 100px;
+            }
+        }
+        @include sp {
+            & + & {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.p-top_works {
+    background: $black;
+    color: $white;
+    &_cont {
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_button {
+            .c-button {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &_main {
+            @include pc {
+                max-width: 680px;
+                width: calc(680 / 1180 * 100%);
+            }
+            .p-top_works_cont_cmn {
+                &_tag {
+                    margin-top: 14px;
+                    li {
+                        display: inline-block;
+                        & + li {
+                            margin-left: 16px;
+                        }
+                    }
+                    a {
+                        @include fz(14);
+                        @include lh(2);
+                        color: $white;
+                        text-decoration: underline;
+                    }
+                }
+                .c-textArea {
+                    margin-top: 14px;
+                    &_text {
+                        max-width: 480px;
+                    }
+                }
+            }
+        }
+        &_side {
+            @include pc {
+                max-width: 478px;
+                width: calc(478 / 1180 * 100%);
+            }
+            @include sp {
+                margin-top: 40px;
+            }
+            @include sp {
+                &_inner {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+            }
+            .p-top_works_cont_cmn {
+                @include pc {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    & + .p-top_works_cont_cmn {
+                        margin-top: 30px;
+                    }
+                }
+                @include sp {
+                    width: 47%;
+                    &:nth-child(n + 3) {
+                        margin-top: 30px;
+                    }
+                }
+                &_img {
+                    @include pc {
+                        max-width: 180px;
+                        width: 38%;
+                    }
+                }
+                .c-textArea {
+                    @include pc {
+                        margin-top: 0;
+                        padding-left: 18px;
+                        width: 62%;
+                    }
+                    @include sp {
+                        margin-top: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.p-top_news {
+    &_list {
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_cmn {
+            display: block;
+            @include pc {
+                width: 49%;
+            }
+            @include sp {
+                width: 100%;
+                & + & {
+                    margin-top: 20px;
+                }
+            }
+            a {
+                background: $yellow;
+                padding: 20px;
+                @include pc {
+                    display: flex;
+                }
+                @include sp {
+                    display: block;
+                }
+            }
+            &_img {
+                background-position: center;
+                background-size: cover;
+                @include pc {
+                    width: 48%;
+                }
+                @include sp {
+                    padding-top: calc(172 / 297 * 100%);
+                }
+            }
+            dl {
+                background: $white;
+                @include pc {
+                    padding: 18px;
+                    width: 52%;
+                }
+                @include sp {
+                    padding: 20px;
+                }
+                dd {
+                    @include fz(18);
+                    font-family: $font_futura;
+                }
+                dt {
+                    margin-top: 12px;
+                    p {
+                        @include lh(1.7);
+                    }
+                }
+            }
+        }
+    }
+}

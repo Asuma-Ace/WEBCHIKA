@@ -1,2 +1,2 @@
-!function(){"use strict";var e;e=document.querySelector(".j-header"),document.querySelector(".j-header_btn").addEventListener("click",(function(){e.classList.contains("active")?e.classList.remove("active"):e.classList.add("active")}))}();
+$('#page-link a[href*="#"]').click((function(){var e=$(this).attr("href");if(window.matchMedia("(min-width: 769px)").matches)var t=$(e).offset().top-80;else t=$(e).offset().top-60;return $("body,html").animate({scrollTop:t},500),!1})),$(".j-header_btn").click((function(){$(".l-header").toggleClass("active")})),$("#page-link a").click((function(){$(".l-header").removeClass("active")})),$((function(){(new WOW).init()}));
 //# sourceMappingURL=script.js.map
